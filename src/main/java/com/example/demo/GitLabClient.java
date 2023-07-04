@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "gitlab", url = "https://gitlab.com")
 public interface GitLabClient {
 
-    @PostMapping(value = "/api/v4/projects/46180345/repository/files/app%2F{file_path}", headers = "PRIVATE-TOKEN=glpat-dvDyZsuzKR2jz19iy383")
+    @PostMapping(value = "/api/v4/projects/47376231/repository/files/app%2F{file_path}", headers = "PRIVATE-TOKEN=glpat-2xdik5Uzzj8BWcJxCbKz")
     String createFile(@RequestParam("file_path") String filePath,
                       @RequestParam("content") String content,
                       @RequestParam("branch") String branch,
